@@ -5,134 +5,132 @@
     <meta charset="UTF-8">
     <title>Blog</title>
     <link href="https://portrait.gitee.com/uploads/avatars/user/1634/4904154_xchb_1581007803.png!avatar200" rel="shortcut icon" type="image/vnd.microsoft.icon">
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	<script src="js/jquery-3.4.1.js"></script>
-	<style>
-		.floatTips{
-			position: fixed;
-			bottom: 10%;
-			right: 1%;
-			display: inline-block;
-			cursor: pointer;
-		    width: 80px;
-			height: 80px;
-			background-image: url(imgs/coffee.png);
-			background-repeat: round;
-			cursor: pointer;
-			z-index: 99;
-			
-		}
-		
-		.floatTips:hover{
-			z-index: 99;
-			background-image: url(imgs/coffee2.png);
-		}
-		
-		
-		.zfdiv{
-			position: fixed;
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(243, 247, 240, 0.99);
-			z-index: 98;
-			overflow: hidden;
-		}
-		.zfimg{
-			width: auto;
-			height: 80%;
-			margin-top: 5%;
-			margin-left: 100px;
-		}
-		
-		
-	</style>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        .floatTips {
+            position: fixed;
+            bottom: 10%;
+            right: 1%;
+            display: inline-block;
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            background-image: url(imgs/coffee.png);
+            background-repeat: round;
+            cursor: pointer;
+            z-index: 99;
+        }
+        
+        .floatTips:hover {
+            z-index: 99;
+            background-image: url(imgs/coffee2.png);
+        }
+        
+        .zfdiv {
+            position: fixed;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(243, 247, 240, 0.99);
+            z-index: 98;
+            overflow: hidden;
+        }
+        
+        .zfimg {
+            width: auto;
+            height: 80%;
+            margin-top: 5%;
+            margin-left: 100px;
+        }
+    </style>
 </head>
 
 <body>
-   <div id="app">
-   	<!--导航菜单-->
-	<div style="width: 100%;position: fixed;margin:0px;padding: 0px;z-index: 69;">
-		<ul class="navigation">
-			<li><a class="menu checkedli" href="#page1">主页</a></li>
-			<li><a class="menu nocheckedli " href="#page2">关于</a></li>
-			<li><a class="menu nocheckedli " href="#page3">创意</a></li>
-			<li><a class="menu nocheckedli " href="#page4">联系</a></li>
-		</ul>
-	</div>
-	
-	<!--小咖啡-->
-	<div class="floatTips"></div>
-	
-	<!--支付信息-->
-	<div class="zfdiv" style="display: none;">
-		<img src="imgs/zhfb.jpg" class="zfimg"/>
-		<img src="imgs/wx.jpg"  class="zfimg"/>
-	</div>
-	
-	<!--主页-->
-	<a name="page1" >
-   	<div style="width: 100%;height: 100%;position: relative;overflow: hidden;">
-		<div class="myinfo">
-			<div class="myname">
-				<span>肖大大</span>
-			</div>
-			<div class="myhead">
-				<img class="myheadimg" src="imgs/me.jpg"/>
-				<div class="gender_icon"><b><b>♂</b></b></div>
-			</div>
-			<div style="height: 150px;padding-left: 20px;margin-top: 20px;">
-				
-				<p>
-					<span class="chanagecolor"><img src="imgs/年龄.png" class="info_icon"/>21year</span>   
-					<span class="chanagecolor"><img src="imgs/地址.png" class="info_icon"/>湖南长沙</span>
-					<span class="chanagecolor"><img src="imgs/工作台.png" class="info_icon"/>Java</span>
-				</p>
-				
-				<p style="margin-top: 30px;text-align: center;font-family: cursive;font-size: 20px;"><i class="chanagecolor">Good Good Study,Day Day Up.</i></p>
-				
-				<p style="padding: 6px;position: absolute;bottom: 0px;">
-					<a class="chanagecolor" style="background-color: rgba(200,110,10,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">Email: 704566072@qq.com</a>
-					<a href="https://github.com/xchb-null" target="_blank" class="chanagecolor" style="background-color: rgba(200,210,10,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">Github</a>
-					<a href="https://gitee.com/xchb" target="_blank" class="chanagecolor" style="background-color: rgba(200,110,210,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">码云</a>
-				</p>	
-			</div>
-		</div>
-	</div>
-	</a>
-	<!--关于-->
-	<a name="page2">
-		<div style="width: 100%;height: 100%;background-color: rgba(100,10,100,0.3);">
-			
-		</div>
-	</a>
-	
-	<!--创意-->
-	<a name="page3">
-	<div style="width: 100%;height: 100%;background-color: rgba(100,100,100,0.3);">
-		
-	</div>
-	</a>
-	
-	<!--联系-->
-	<a name="page4">
-	<div style="width: 100%;height: 100%;background-color: rgba(200,10,100,0.3);">
-		
-	</div>
-	</a>
-	
-   </div>
-   
-	<div style="background: linear-gradient(to bottom, 	#B4CDCD 0%, #FFBBFF 90%);">
-		<canvas id="canvas"></canvas>
-	</div>
-	
+    <div id="app">
+        <!--导航菜单-->
+        <div style="width: 100%;position: fixed;margin:0px;padding: 0px;z-index: 69;">
+            <ul class="navigation">
+                <li><a class="menu checkedli" href="#page1">主页</a></li>
+                <li><a class="menu nocheckedli " href="#page2">关于</a></li>
+                <li><a class="menu nocheckedli " href="#page3">创意</a></li>
+                <li><a class="menu nocheckedli " href="#page4">联系</a></li>
+            </ul>
+        </div>
+
+        <!--小咖啡-->
+        <div class="floatTips"></div>
+
+        <!--支付信息-->
+        <div class="zfdiv" style="display: none;">
+            <img src="imgs/zhfb.jpg" class="zfimg" />
+            <img src="imgs/wx.jpg" class="zfimg" />
+        </div>
+
+        <!--主页-->
+        <a name="page1">
+            <div style="width: 100%;height: 100%;position: relative;overflow: hidden;">
+                <div class="myinfo">
+                    <div class="myname">
+                        <span>肖大大</span>
+                    </div>
+                    <div class="myhead">
+                        <img class="myheadimg" src="imgs/me.jpg" />
+                        <div class="gender_icon"><b><b>♂</b></b>
+                        </div>
+                    </div>
+                    <div style="height: 150px;padding-left: 20px;margin-top: 20px;">
+
+                        <p>
+                            <span class="chanagecolor"><img src="imgs/年龄.png" class="info_icon"/>21year</span>
+                            <span class="chanagecolor"><img src="imgs/地址.png" class="info_icon"/>湖南长沙</span>
+                            <span class="chanagecolor"><img src="imgs/工作台.png" class="info_icon"/>Java</span>
+                        </p>
+
+                        <p style="margin-top: 30px;text-align: center;font-family: cursive;font-size: 20px;"><i class="chanagecolor">Good Good Study,Day Day Up.</i></p>
+
+                        <p style="padding: 6px;position: absolute;bottom: 0px;">
+                            <a class="chanagecolor" style="background-color: rgba(200,110,10,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">Email: 704566072@qq.com</a>
+                            <a href="https://github.com/xchb-null" target="_blank" class="chanagecolor" style="background-color: rgba(200,210,10,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">Github</a>
+                            <a href="https://gitee.com/xchb" target="_blank" class="chanagecolor" style="background-color: rgba(200,110,210,0.6);padding: 3px;border-radius: 3%;cursor: pointer;margin-right: 10px;">码云</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!--关于-->
+        <a name="page2">
+            <div style="width: 100%;height: 100%;background-color: rgba(100,10,100,0.3);">
+
+            </div>
+        </a>
+
+        <!--创意-->
+        <a name="page3">
+            <div style="width: 100%;height: 100%;background-color: rgba(100,100,100,0.3);">
+
+            </div>
+        </a>
+
+        <!--联系-->
+        <a name="page4">
+            <div style="width: 100%;height: 100%;background-color: rgba(200,10,100,0.3);">
+
+            </div>
+        </a>
+
+    </div>
+
+    <div style="background: linear-gradient(to bottom, 	#B4CDCD 0%, #FFBBFF 90%);">
+        <canvas id="canvas"></canvas>
+    </div>
+
     <script src="js/canvasstar.js"></script>
     <script>
         var CanvasStar = new CanvasStar;
         CanvasStar.init();
     </script>
-	<script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
